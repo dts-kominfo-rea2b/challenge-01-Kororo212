@@ -6,10 +6,10 @@ const firstUser = {
     gender: "Female",
     age: 17,
     email: "monica@dingdong.com",
-    favoriteColor: ["yellow", "pink", "white", "purple"],
+    favoriteColor: [...new Set(['Yellow', 'Pink', 'White', 'Purple'])],
     isHavePet: "Yes",
     education: [{ name: "SD 01", city: "Jakarta", graduate: "2016" }, { name: "SMP 02", city: "Jakarta", graduate: "2019" }, { name: "SMA 03", city: "Tangerang" }],
-    favoriteRestaurant: ["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi"]
+    favoriteRestaurant: [...new Set(['Bento', 'Sushi', 'Pancake', 'Eggy', 'Tempura', 'Bento', 'Eggy', 'Padang', 'Tteok', 'Sushi', 'Sushi'])],
 
 };
 const secondUser = {
@@ -17,12 +17,11 @@ const secondUser = {
     gender: "Male",
     age: 23,
     email: "wendy@dingdong.com",
-    favoriteColor: ["Blue", "Grey", "Black"],
+    favoriteColor: [...new Set(['Blue', 'Black', 'Grey'])],
     isHavePet: "No",
     education: [{ name: "SD 02", city: "Jakarta", graduate: "2010" }, { name: "SMP 03", city: "Bogor", graduate: "2013" }, { name: "SMA 01", city: "Surabaya", graduate: "2016" }, { name: "Universitas Maju Jaya", city: "Tangerang" }],
-    favoriteRestaurant: ["Tempura", "Bento", "Sushi", "Pancake", "Padang", "Katsu", "Geprek", "Pancake", "Eggy"]
+    favoriteRestaurant: [...new Set(['Tempura', 'Bento', 'Sushi', 'Pancake', 'Padang', 'Katsu', 'Geprek', 'Pancake', 'Eggy'])],
 };
-
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
 const users = [];
